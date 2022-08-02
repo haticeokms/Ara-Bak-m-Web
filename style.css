@@ -1,0 +1,71 @@
+body{
+    background-color: #424242 !important;
+    text-align: center !important
+}
+
+
+h2{
+    color: white;
+    font-family: 'Amatic SC', cursive;
+    font-size: 50px;
+}
+
+h3{
+    color: white;
+    font-family: 'Amatic SC', cursive;
+    font-size: 30px;
+}
+
+p,textarea{
+    font-family: 'Montserrat', sans-serif !important;
+    border-radius: 10px !important;
+}
+
+.content{
+    height: 80%;
+    width: 80%;
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    right: 10%;
+}
+
+.box{
+    /* margin: auto !important; */
+    margin-top: 15px !important;
+    font-size: 25px;
+    background-color: white;
+    color: white;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+/* ARAÇLAR STYLE */
+.head-brand{
+    background-color: #f57c00;
+    text-align: center;   
+    border-radius: 10px;
+    padding: 5px;
+}
+
+/* BAKIM YAPILAN ARAÇLAR STYLE */
+.head-completed{
+    background-color:#43a047 ;
+    text-align: center;
+    border-radius: 10px;
+    padding: 5px; 
+} 
+
+/* TESLİM EDİLEN ARAÇLAR STYLE */
+.head-delivered{
+    background-color: #007BF7 ;
+    text-align: center;
+    border-radius: 10px;
+    padding: 5px; 
+} 
+
+.btn-add{
+    padding: 10px 30px !important;
+    font-size: 30px !important;
+    border-radius: 10px !important;
+}

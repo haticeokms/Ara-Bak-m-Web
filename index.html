@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARAÇ BAKIM </title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Bootstrap Dosyası -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    
+     <!-- Fontawesome -->
+     <script src="https://kit.fontawesome.com/f0b82e9e29.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="content">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>ARAÇ BAKIM</h2>
+                </div>
+                <div class="col-md-12">
+                    <div class="input-group">
+                        <textarea id="task" class="form-control" aria-label="With textarea"></textarea>
+                        <div class="input-group-append">
+                            <button id="add" class="btn btn-primary btn-add" type="button" onclick="AddTask();"><i class="fas fa-plus"></i></button>
+                          </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+
+                <!-- ARAÇLAR KUTUSU -->
+                <div class="col-md-6">
+                    <div class="box">
+                        <div class="head-brand">
+                            <h3>ARAÇLAR</h3>
+                        </div>
+                        <div class="body" id="brand">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BAKIM YAPILAN ARAÇLAR KUTUSU -->
+                <div class="col-md-6">
+                    <div class="box">
+                        <div class="head-completed">
+                            <h3>BAKIMI YAPILAN ARAÇLAR</h3>
+                        </div>
+                        <div class="body" id="completed">  
+                        </div>
+                    </div>
+                </div> 
+
+                <!-- TESLİM EDİLEN ARAÇLAR KUTUSU -->
+                <div class="col-md-12">
+                    <div class="box">
+                        <div class="head-delivered">
+                            <h3>TESLİM EDİLEN ARAÇLAR</h3>
+                        </div>
+                        <div class="body" id="delivered">  
+                        </div>
+                    </div>
+                </div> 
+            </div>  
+        </div>
+    </div>   
+    
+
+    <div class="modal fade" id="editTaskModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Edit Task</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <textarea id="task-edit" class="form-control"></textarea>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button id="btn-save" type="button" class="btn btn-primary">Save</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+
+</html>
